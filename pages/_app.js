@@ -10,12 +10,20 @@ function MyApp({ Component, pageProps, ...appProps }) {
           <Header/>
           <Component {...pageProps}/>
         </>
-      )}else{
+      )}
+      else if ([`/contact`].includes(appProps.router.pathname)){
+        return (
+          <>
+            <Header/>
+            <Component {...pageProps}/>
+          </>
+        )}
+      else{
       return (
         <>
           <Header/>
           <Component {...pageProps} />
-          <div style={{ width: "100vw", height: "100vh", position:"absolute", zIndex:"0", top:"0px"}}>
+          <div style={{ width: "100%", height: "100%", position:"absolute", zIndex:"0", top:"0px"}}>
             <Spline scene="https://prod.spline.design/x-0dOPrwauNvnY-b/scene.splinecode" />
           </div>
         </>

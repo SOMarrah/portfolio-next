@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className='glass' style={{position: "relative", width: "100vw", height: "50px", zIndex:"1"}}>
+    <div className='glass' style={{position: "relative", width: "100%", height: "50px", zIndex:"1"}}>
         <div style={{"display":"flex", "justifyContent": "space-between"}}>
                 <Link href="/">
                     <h1 style={{"display":"flex","flexDirection":"row","flexWrap":"nowrap","alignContent":"center","justifyContent":"flex-start","alignItems":"center", "margin":"6px"}}>Stephen OMarrah</h1>
